@@ -1,16 +1,18 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from "./components/NavBar.vue";
+import MapCanvas from "./components/MapCanvas.vue";
 </script>
 
 <template>
-  <div class="container">
-    <nav>
-      <NavBar class="navbar" />
-    </nav>
+  <nav>
+    <NavBar class="navbar" />
+  </nav>
 
-    <RouterView />
-  </div>
+  <MapCanvas />
+
+  <RouterView />
 </template>
 
 <style scoped>
@@ -19,7 +21,6 @@ import NavBar from "./components/NavBar.vue";
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  display: flex;
+.navbar {
 }
 </style>
