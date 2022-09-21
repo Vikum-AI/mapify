@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import NavBar from "./components/NavBar.vue";
+import MapCanvas from "./components/MapCanvas.vue";
 </script>
 
 <template>
