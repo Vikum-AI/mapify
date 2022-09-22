@@ -20,7 +20,7 @@ import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { faMap } from "@fortawesome/free-solid-svg-icons";
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
-import VueMapboxTs from "vue-mapbox-ts";
+
 // import "./assets/main.css";
 
 const app = createApp(App);
@@ -31,7 +31,6 @@ library.add(faUserSecret, faMap, faInfo, faCog);
 app.use(createPinia());
 app.use(router);
 app.use(PrimeVue);
-app.use(VueMapboxTs)
 
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.mount("#app");

@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import Button from "primevue/button";
+import MapCanvas from "../components/MapCanvas.vue";
 </script>
 
 <template>
-  <main>this is the homepage</main>
+  <main>
+    <MapCanvas />
+  </main>
 </template>
